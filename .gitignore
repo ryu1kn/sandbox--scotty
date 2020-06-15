@@ -1,7 +1,9 @@
-cabal.sandbox.config
-.hsenv
-result
-/.stack-work
-*.o
 *.hi
+*.iml
+*.o
 *~
+.hsenv
+/.idea
+/.stack-work
+cabal.sandbox.config
+result
