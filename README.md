@@ -3,9 +3,9 @@
 Originally copied from https://github.com/scotty-web/scotty-starter
 
 ```sh
-cabal install
-cabal build
-cabal run
+stack setup
+stack build
+stack run
 ```
 
 Then navigate to http://localhost:3000

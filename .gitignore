@@ -1,8 +1,7 @@
 cabal.sandbox.config
 .hsenv
 result
-/dist
-/dist-newstyle
+/.stack-work
 *.o
 *.hi
 *~

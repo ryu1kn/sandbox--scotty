@@ -1,34 +1,47 @@
-name:                app
-version:             0.1.0.0
-synopsis:            Starter kit project for Scotty Apps
-description:         Starter kit project for Scotty Apps
-homepage:            https://github.com/dmjio/scotty-starter
-license:             AllRightsReserved
-author:              Your Name
-maintainer:          your.name@gmail.com
-copyright:           Your Name (c) 2015-2018
-category:            Web
-build-type:          Simple
-cabal-version:       >= 1.10
+cabal-version: 1.12
 
-executable app
-  main-is:             Main.hs
-  other-extensions:    OverloadedStrings
-  other-modules:       Client.CSS
-                       Controllers.Home
-                       Views.Home
-                       Views.Utils
-  build-depends:       base >=4.3.1,
-                       wai-extra >=3.0.0,
-                       wai-middleware-static,
-                       scotty,
-                       clay,
-                       text,
-                       blaze-html,
-                       blaze-markup,
-                       aeson
-  default-language:    Haskell2010
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 7b17fbe98477e908615b9a9311bfe4e62033ca9c78f6798fbce2c67ebfe1bcd9
+
+name:           app
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/ryu1kn/sandbox--scotty#readme>
+homepage:       https://github.com/ryu1kn/sandbox--scotty#readme
+bug-reports:    https://github.com/ryu1kn/sandbox--scotty/issues
+author:         Ryuichi Inagaki
+maintainer:     example@example.com
+copyright:      2020 Ryuichi Inagaki
+license:        MIT
+build-type:     Simple
+extra-source-files:
+    README.md
 
 source-repository head
-   type: git
-   location: https://github.com/scotty-web/scotty-starter
+  type: git
+  location: https://github.com/ryu1kn/sandbox--scotty
+
+executable app
+  main-is: Main.hs
+  other-modules:
+      Client.CSS
+      Controllers.Home
+      Views.Home
+      Views.Utils
+  hs-source-dirs:
+      ./.
+  other-extensions: OverloadedStrings
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aeson
+    , base >=4.7 && <5
+    , blaze-html
+    , blaze-markup
+    , clay
+    , scotty
+    , text
+    , wai-extra
+    , wai-middleware-static
+  default-language: Haskell2010
